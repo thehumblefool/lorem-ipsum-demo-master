@@ -7,6 +7,12 @@ const app = express()
 
 // define the first route
 app.get("/", function (req, res) {
+
+  console.log(JSON.stringify({
+    ip: req.ip,
+    ips: req.ips,
+    headers: req.headers
+  }, null, 2));
   
   res.send(`
   <!DOCTYPE html>
