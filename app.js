@@ -8,11 +8,16 @@ const app = express()
 // define the first route
 app.get("/", function (req, res) {
 
+  console.log('#######################');
   console.log(JSON.stringify({
-    ip: req.ip,
-    ips: req.ips,
-    headers: req.headers
+    query: req.query,
+    userAgent: req.headers['user-agent'],
+    connectingIp: req.headers['cf-connecting-ip'],
+    ipCountry: req.headers['cf-ipcountry'],
+    trueClientIp: req.headers['true-client-ip'],
+    xff: req.headers['x-forwarded-for']
   }, null, 2));
+  console.log('#######################');
   
   res.send(`
   <!DOCTYPE html>
