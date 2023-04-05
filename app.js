@@ -25,6 +25,7 @@ app.get("/", function (req, res) {
   <head>
       <meta charset="utf-8">
       <meta name="Description" CONTENT="Sample for Google assistant">
+      <meta name="google" content="nopagereadaloud">
       <title>Sample for Google assistant</title>
   </head>
   
