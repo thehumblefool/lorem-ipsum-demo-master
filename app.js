@@ -23,7 +23,7 @@ app.get("/", function (req, res) {
   <!DOCTYPE html>
   <html>
   <head>
-      <meta name="google" content="nopagereadaloud">
+      <meta name="google" content="nopagereadaloud" />
       <title>Sample for Google assistant</title>
   </head>
   
