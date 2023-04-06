@@ -9,7 +9,7 @@ const app = express()
 app.get("/", function (req, res) {
 
   console.log('#######################');
-  console.log(JSON.stringify(req.headers, null, 2));
+  console.log(JSON.stringify({query: params.query, headers: req.headers}, null, 2));
   console.log('#######################');
   
   res.send(`
